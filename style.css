@@ -127,12 +127,16 @@
 }
 
 @media (max-width: 720px) {
+    body {
+        margin: 0;
+    }
     #logo {
-        margin: 10px 0 0 0;
-        width: 90px;
-        height: 90px;
+        margin: 0;
+        width: 70px;
+        height: 70px;
     }
     #textbox {
+        padding: 0;
         font-size: 24px;
     }
     .container {
@@ -140,7 +144,7 @@
     }
     .layout {
         text-align: center;
-        margin: 2rem 5px 0 5px;
+        margin: 1rem 5px 0 5px;
     }
     .text_layout {
         margin: 0 0 2rem 0;

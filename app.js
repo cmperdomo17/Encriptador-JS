@@ -17,6 +17,12 @@ function encriptar() {
     let noTextFound = document.querySelector(".no_text_found");
     let textFound = document.querySelector(".result_layout");
 
+    const minusculas = /^[a-z\s]+$/;
+    if (!minusculas.test(texto)) {
+        alert("Solo se permiten letras minúsculas y sin acentos");
+        return;
+    }
+
     if (texto === "") {
         noTextFound.style.display = "block";
         textFound.style.display = "none";
@@ -37,6 +43,12 @@ function desencriptar() {
     let noTextFound = document.querySelector(".no_text_found");
     let textFound = document.querySelector(".result_layout");
 
+    const minusculas = /^[a-z\s]+$/;
+    if (!minusculas.test(texto)) {
+        alert("Solo se permiten letras minúsculas y sin acentos");
+        return;
+    }
+
     if (texto === "") {
         noTextFound.style.display = "block";
         textFound.style.display = "none";
@@ -51,6 +63,7 @@ function desencriptar() {
         document.getElementById("result").value = textoDesencriptado;
     }
 }
+
 function copiar() {
     let texto = document.getElementById("result").value;
     navigator.clipboard.writeText(texto)
