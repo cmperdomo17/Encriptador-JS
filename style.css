@@ -175,6 +175,7 @@ footer {
     .layout {
         text-align: center;
         margin: 1rem 0 0 5px;
+        width: 100%;
     }
     #textbox {
         padding: 0;
@@ -192,7 +193,7 @@ footer {
     }
     .text_layout {
         margin: 5rem 0 1rem 0;
-        width: 100%;
+        width: 70%;
     }
     .no_text_found {
         margin: 1rem 0 0 0;
@@ -208,6 +209,6 @@ footer {
     }
     .buttons {
         flex-direction: column;
-        gap: 0;
+        align-items: center;
     }
 }
