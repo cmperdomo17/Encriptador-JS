@@ -68,11 +68,6 @@
     font-weight: 400;
 }
 
-#error_msg {
-    color: #ff4d4d;
-    font-size: 14px;
-}
-
 .tooltip {
     display: flex;
     margin-bottom: 16px;
