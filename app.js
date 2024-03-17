@@ -24,6 +24,8 @@ function encriptar() {
         span.textContent = "No se permiten mayúsculas ni acentos. Intente de nuevo."
         span.style.color = "red";
         svgPath.style.fill = "red";
+        noTextFound.style.display = "block";
+        textFound.style.display = "none";
         return;
     } else {
         span.textContent = "Solo letras minúsculas y sin acentos";
