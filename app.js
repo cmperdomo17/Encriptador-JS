@@ -49,7 +49,23 @@ function encriptar() {
 function desencriptar() {
     let texto = document.getElementById("textbox").value;
     let noTextFound = document.querySelector(".no_text_found");
+    let span = document.querySelector("#tooltiptext");
+    let svgPath = document.querySelector(".tooltip svg path");
     let textFound = document.querySelector(".result_layout");
+
+    const minusculas = /^[a-z\s]+$/;
+    if (!minusculas.test(texto)) {
+        span.textContent = "No se permiten mayúsculas ni acentos. Intente de nuevo."
+        span.style.color = "red";
+        svgPath.style.fill = "red";
+        noTextFound.style.display = "block";
+        textFound.style.display = "none";
+        return;
+    } else {
+        span.textContent = "Solo letras minúsculas y sin acentos";
+        span.style.color = "";
+        svgPath.style.fill = "";
+    }
 
     if (texto === "") {
         noTextFound.style.display = "block";
