@@ -19,7 +19,17 @@
     border: 2px solid #87d9f9;
 }
 
-#btn_encrypt, #btn_decrypt, #btn_copy {
+#btn_copy {
+    font-size: 20px;
+    font-weight: 600;
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#btn_encrypt, #btn_decrypt {
     font-size: 20px;
     font-weight: 600;
     width: 328px;
