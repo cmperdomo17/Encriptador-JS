@@ -54,11 +54,11 @@ function desencriptar() {
         textFound.style.display = "none";
     } else {
         noTextFound.style.display = "none";
-        let textoDesencriptado = texto.replace(/enter/g, "e")
-                                        .replace(/imes/g, "i")
-                                        .replace(/ai/g, "a")
+        let textoDesencriptado = texto.replace(/ufat/g, "u")
                                         .replace(/ober/g, "o")
-                                        .replace(/ufat/g, "u");
+                                        .replace(/ai/g, "a")
+                                        .replace(/imes/g, "i")
+                                        .replace(/enter/g, "e");
         textFound.style.display = "block";
         document.getElementById("result").value = textoDesencriptado;
     }
