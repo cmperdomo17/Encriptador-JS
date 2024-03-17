@@ -89,7 +89,7 @@
 }
 
 .no_text_found {
-    padding: 60px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 #img_empty {
@@ -213,5 +213,6 @@ footer {
     .buttons {
         flex-direction: column;
         gap: 0;
+        width: 100%;
     }
 }
